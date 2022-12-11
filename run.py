@@ -1,3 +1,6 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import random
+
+print('Welcome to our game - Earth, Fire, Water!')
+add_username = input('What is your name?: ')
+print('Hello ' + add_username + '!')
+
