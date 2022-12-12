@@ -25,4 +25,4 @@ Instructions of the game
 you_win = 0 
 computer_wins = 0
 draw = 0 
-
+select_option = ['Earth', 'Fire','Water']
