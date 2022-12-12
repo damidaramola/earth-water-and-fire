@@ -25,4 +25,10 @@ Instructions of the game
 you_win = 0 
 computer_wins = 0
 draw = 0 
-select_option = ['Earth', 'Fire','Water']
+select_option = ['Earth', 'Fire', 'Water']
+
+def check_winner(your_choice,computer_choice):
+    """
+    this function checks if you or computer wins 
+    """
+    
