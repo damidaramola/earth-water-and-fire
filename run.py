@@ -29,6 +29,7 @@ select_option = ['Earth', 'Fire', 'Water']
 
 
 def check_winner(your_choice, computer_choice):
+
     """
     this function checks if you or computer wins
     """
@@ -57,11 +58,13 @@ def check_winner(your_choice, computer_choice):
 # Use while loop to commence game
 
 
-while (you_win != 3 and computer_wins != 3):
+while (you_win != 3 and computer_wins !=3):
+
     # Validate if player inputs either Earth, Fire or  Water
     while True:
         your_choice = input("\nPick either Earth, Fire or  Water: ")
-        if (your_choice == 'Earth' or your_choice == ' Fire' or your_choice == 'Water'):
+        your_choice_modified = your_choice.lower()
+        if (your_choice_modified == 'earth' or your_choice_modified == 'fire' or your_choice_modified == 'water'):
             break
         else:
             print('Wrong input.Pick either Earth, Fire or  Water: ')
