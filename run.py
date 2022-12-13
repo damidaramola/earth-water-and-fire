@@ -61,10 +61,10 @@ while (you_win != 3 and computer_wins != 3):
     # Validate if player inputs either Earth, Fire or  Water
     while True:
         your_choice = input("\nPick either Earth, Fire or  Water: ")
-        if( your_choice =='Earth' or your_choice == ' Fire' or your_choice == 'Water'):
+        if (your_choice == 'Earth' or your_choice == ' Fire' or your_choice == 'Water'):
             break
         else:
-            print('Wrong input.Pick either Earth, Fire or  Water: ')    
+            print('Wrong input.Pick either Earth, Fire or  Water: ')
 
 # Generate the computers choice
 computer_choice = random.choice(select_option)
@@ -79,3 +79,7 @@ elif (result == 'computer'):
     computer_wins += 1
 else:
     draw += 1
+# print out final results from game
+print('Your score: ', you_win, 'computer: ', computer_wins, 'Draw: ', draw)
+
+print('Game Over!')
