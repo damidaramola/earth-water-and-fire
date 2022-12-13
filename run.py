@@ -53,4 +53,11 @@ def check_winner(your_choice, computer_choice):
     else:
         print('It is a draw!, play again')
         return 'draw'
-        
+
+# Use while loop to commence game
+
+
+while (you_win != 3 and computer_wins != 3):
+    # Validate input
+    while True:
+        your_choice = input("\nPick either Earth, Fire or  Water: ")
