@@ -72,3 +72,10 @@ computer_choice = random.choice(select_option)
 # print results
 print('Your Choice: ', your_choice)
 print('Computers Choice: ', computer_choice)
+result = check_winner(your_choice, computer_choice)
+if (result == 'player'):
+    you_win += 1
+elif (result == 'computer'):
+    computer_wins += 1
+else:
+    draw += 1
