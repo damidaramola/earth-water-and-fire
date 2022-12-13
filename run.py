@@ -31,4 +31,24 @@ def check_winner(your_choice,computer_choice):
     """
     this function checks if you or computer wins 
     """
-    
+    if(your_choice == 'Water' and computer_choice == 'Earth'):
+        print('You lost - Earth absorbs Water!')
+        return 'computer'
+    elif(your_choice == 'Water' and computer_choice == 'Fire'):
+        print('You won! - Water quenches Fire!') 
+        return 'player'  
+    elif(your_choice == 'Fire' and computer_choice == 'Water'):
+        print('You lost  - Water quenches Fire!') 
+        return 'computer'  
+    elif(your_choice == 'Fire' and computer_choice == 'Earth'):
+        print('You won! - Fire Burns Earth!') 
+        return 'player'     
+    elif(your_choice == 'Earth' and computer_choice == 'Water'):
+        print('You won! - Earth absorbs Water!') 
+        return 'player'
+    elif(your_choice == 'Earth' and computer_choice == 'Fire'):
+        print('You lost - Fire Burns Earth!') 
+        return 'computer'
+    else:
+        print('It is a draw!, play again')
+        return 'draw'    
