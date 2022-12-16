@@ -2,6 +2,7 @@ import random
 
 print('Welcome to - Earth, Fire, Water!')
 
+# Validates if user inputs blank space or not
 while True:
     add_username = input('What is your name?: ')
 
@@ -15,8 +16,8 @@ while True:
         print('Hi ' + add_username + ' Let\'s play!')
         break
 
-# play_game = input("Would you like to go play or not? (y/Y or n/N): ")
 
+# How to play the game
 print('''
 Instructions of the game
 
@@ -24,6 +25,7 @@ Instructions of the game
     Type in either Earth, Fire or Water
     The computer will pick one of these 3 options
     Read the rules to see which element wins over the other
+    
     Rules
 
     1.Earth Absorbs Water
@@ -66,7 +68,7 @@ def check_winner(your_choice, computer_choice):
 # Use while loop to commence game
 
 
-while (you_win != 3 and computer_wins != 3):
+while (you_win != 2 and computer_wins != 2):
 
     # Validate if player inputs either Earth, Fire or  Water
     while True:
