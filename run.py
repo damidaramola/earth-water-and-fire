@@ -2,20 +2,20 @@ import random
 
 print('Welcome to - Earth, Fire, Water!')
 
-
 while True:
-    try:
-       add_username = input('What is your name?: ').strip()
-    except ValueError:
-        print("Please enter a valid username")
+    add_username = input('What is your name?: ')
+
+    if add_username == '':
+        print('invalid output. Please insert a username')
+        continue
+    elif add_username == ' ':
+        print('invalid output. Please insert a username')
         continue
     else:
-        print(f'invalid input')
-        continue
+        print('Hi ' + add_username + ' Let\'s play!')
+        break
 
-
-
-play_game = input("Would you like to go play or not? (y/Y or n/N): ")
+# play_game = input("Would you like to go play or not? (y/Y or n/N): ")
 
 print('''
 Instructions of the game
@@ -93,4 +93,4 @@ while (you_win != 3 and computer_wins != 3):
     # print out final results from game
     print('Your score: ', you_win, 'computer: ', computer_wins, 'Draw: ', draw)
 
-print('Game Over!')
+print('Game Over!. Thank you for playing :)')
