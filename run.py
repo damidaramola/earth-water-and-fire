@@ -1,12 +1,21 @@
 import random
 
 print('Welcome to - Earth, Fire, Water!')
-add_username = input('What is your name?: ')
-print('Hello ' + add_username + '!')
 
 
-play_game = input('Would you like to play? ')
+while True:
+    try:
+       add_username = input('What is your name?: ').strip()
+    except ValueError:
+        print("Please enter a valid username")
+        continue
+    else:
+        print(f'invalid input')
+        continue
 
+
+
+play_game = input("Would you like to go play or not? (y/Y or n/N): ")
 
 print('''
 Instructions of the game
@@ -29,7 +38,6 @@ select_option = ['Earth', 'Fire', 'Water']
 
 
 def check_winner(your_choice, computer_choice):
-
     """
     this function checks if you or computer wins
     """
