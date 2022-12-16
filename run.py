@@ -22,8 +22,8 @@ Instructions of the game
     3.Fire Burns Earth ''')
 
 # Add variables to track score
-you_win = 0
 computer_wins = 0
+you_win = 0
 draw = 0
 select_option = ['Earth', 'Fire', 'Water']
 
@@ -33,22 +33,22 @@ def check_winner(your_choice, computer_choice):
     """
     this function checks if you or computer wins
     """
-    if (your_choice == 'Water' and computer_choice == 'Earth'):
+    if (your_choice == 'water' and computer_choice == 'Earth'):
         print('You lost - Earth absorbs Water!')
         return 'computer'
-    elif (your_choice == 'Water' and computer_choice == 'Fire'):
+    elif (your_choice == 'water' and computer_choice == 'Fire'):
         print('You won! - Water quenches Fire!')
         return 'player'
-    elif (your_choice == 'Fire' and computer_choice == 'Water'):
+    elif (your_choice == 'fire' and computer_choice == 'Water'):
         print('You lost  - Water quenches Fire!')
         return 'computer'
-    elif (your_choice == 'Fire' and computer_choice == 'Earth'):
+    elif (your_choice == 'fire' and computer_choice == 'Earth'):
         print('You won! - Fire Burns Earth!')
         return 'player'
-    elif (your_choice == 'Earth' and computer_choice == 'Water'):
+    elif (your_choice == 'earth' and computer_choice == 'Water'):
         print('You won! - Earth absorbs Water!')
         return 'player'
-    elif (your_choice == 'Earth' and computer_choice == 'Fire'):
+    elif (your_choice == 'earth' and computer_choice == 'Fire'):
         print('You lost - Fire Burns Earth!')
         return 'computer'
     else:
@@ -58,7 +58,7 @@ def check_winner(your_choice, computer_choice):
 # Use while loop to commence game
 
 
-while (you_win != 3 and computer_wins !=3):
+while (you_win != 3 and computer_wins != 3):
 
     # Validate if player inputs either Earth, Fire or  Water
     while True:
@@ -69,20 +69,20 @@ while (you_win != 3 and computer_wins !=3):
         else:
             print('Wrong input.Pick either Earth, Fire or  Water: ')
 
-# Generate the computers choice
-computer_choice = random.choice(select_option)
+    # Generate the computers choice
+    computer_choice = random.choice(select_option)
 
-# print results
-print('Your Choice: ', your_choice)
-print('Computers Choice: ', computer_choice)
-result = check_winner(your_choice, computer_choice)
-if (result == 'player'):
-    you_win += 1
-elif (result == 'computer'):
-    computer_wins += 1
-else:
-    draw += 1
-# print out final results from game
-print('Your score: ', you_win, 'computer: ', computer_wins, 'Draw: ', draw)
+    # print results
+    print('Your Choice: ', your_choice)
+    print('Computers Choice: ', computer_choice)
+    result = check_winner(your_choice, computer_choice)
+    if (result == 'player'):
+        you_win += 1
+    elif (result == 'computer'):
+        computer_wins += 1
+    else:
+        draw += 1
+    # print out final results from game
+    print('Your score: ', you_win, 'computer: ', computer_wins, 'Draw: ', draw)
 
 print('Game Over!')
