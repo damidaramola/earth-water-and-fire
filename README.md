@@ -11,6 +11,7 @@ This simple python game is a variation of the game 'rock , paper, scissors'. In 
 ![instructions](https://user-images.githubusercontent.com/110638513/208222557-35319b41-468f-4636-a280-74036411dc76.PNG)
 ### Variables 
 * There are a few essential variables that are used to keep track of the score. These are 'computer_wins' , 'you_win' and lastly 'draw' in the case of a tie occuring between the player and the computer. The 'select_option' variable also holds the list of options that the player and computer chooses from.
+
 ![variables](https://user-images.githubusercontent.com/110638513/208222567-f5d8f104-bb27-4604-82e2-f983d87ccd1d.PNG)
 ### Function that checks for the winner
 * The 'check_winner' function checks  who, (the player or the computer) wins that round depending on the option that they choose. It is comprised of a series of if/elif/else statements and the possible outcomes in the game.
