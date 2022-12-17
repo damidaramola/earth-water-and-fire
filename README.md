@@ -22,7 +22,8 @@ This simple python game is a variation of the game 'rock , paper, scissors'. In 
 
 ### Print Results 
 
-* Lastly , The results are printed to the terminal while the scores add up for each round the user plays against the computer. 
+* Lastly , The results are printed to the terminal while the scores add up for each round the user plays against the computer.
+
 ![print results](https://user-images.githubusercontent.com/110638513/208222634-5601596a-47b5-4353-8df0-179ea0ec5217.PNG)
 
 ![scores](https://user-images.githubusercontent.com/110638513/208224235-e79e08a6-b518-47c6-bd68-da394a07d61e.PNG)
