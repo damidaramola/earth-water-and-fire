@@ -25,7 +25,7 @@ Instructions of the game
     Type in either Earth, Fire or Water
     The computer will pick one of these 3 options
     Read the rules to see which element wins over the other
-    
+    ----------------
     Rules
 
     1.Earth Absorbs Water
